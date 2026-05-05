@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Amro Altayeb",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": 56.2, "left": -117.6, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 211.8, "left": -163.8, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 40.8,
+      "left": 136.2,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "bz1:2", "bb1:17b.h", "red", [ "v0" ] ],
+    [ "bz1:1", "bb1:16b.g", "black", [ "v0" ] ],
+    [ "uno:5", "bb1:17b.j", "green", [ "v0" ] ],
+    [ "uno:GND.1", "bb1:7b.j", "black", [ "v0" ] ],
+    [ "bb1:7b.i", "bb1:16b.i", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
